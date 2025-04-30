@@ -13,6 +13,7 @@ def saudacao():
 saudacao()
 ############################################
 
+
 def linha():
     print("-" * 30)
 
@@ -27,6 +28,7 @@ linha()
 
 ##########################################
 
+
 def saudacao(nome):
     print(f"Olá {nome}!")
 
@@ -35,6 +37,7 @@ nome = input("Digite seu nome: ")
 saudacao(nome)
 
 ##########################################
+
 
 def soma(n1, n2):
     somar = n1 + n2
@@ -68,6 +71,7 @@ multiplicacao(n1, n2)
 divisao(n1, n2)
 
 ###########################################
+
 
 def somar_numeros(x, y):
     s = x + y
