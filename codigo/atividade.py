@@ -15,21 +15,19 @@
 # calculo(n1)
 
 ############################################################
+def calculoMulta(qtd):
+    multa = qtd * MULTAKG
+    return multa
 
 
-def peixes():
-    if pesoPeixes > 100:
+MULTAKG = 4.00
+QUILOSPERMITIDOS = 100
 
-        excesso = pesoPeixes - 100
-        multa = excesso * 4
+pesoPescado = float(input("Digite o peso do pescado: "))
 
-        print(f"Peso excedente: {excesso} kg")
-        print(f"Valor da multa: R$ {multa:.2f}")
-    else:
-        print("Peso dentro do limite permitido, não há multa a ser paga.")
-
-
-pesoPeixes = float(input("Digite o Peso(kg) total dos peixes pescados: "))
-
-peixes()
-
+if pesoPescado > QUILOSPERMITIDOS:
+    excedente = pesoPescado - QUILOSPERMITIDOS
+    vlMulta = calculoMulta(excedente)
+    print(f"o excedente foi: {excedente}kg e o valor da multa é R${vlMulta}")
+else:
+    print("Não houve excedente, portanto não há multa.")
